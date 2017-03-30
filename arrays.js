@@ -1,0 +1,105 @@
+
+
+function printReverse(arr){
+	for(var i = arr.length - 1; i >= 0; i--){
+		console.log(arr[i]);
+	}
+}
+printReverse();
+
+
+
+
+
+
+
+// function printReverse(nums){
+
+// 	var newOrder = nums.reverse();
+// 	newOrder.forEach(function(i){
+// 		console.log(i);
+// 	});
+// }
+
+// printReverse();
+
+
+
+
+// function isUniform(arr){
+// //find value of first in array
+// //if all others in array === the first then true, uniform
+// var value = arr[0];
+// value.forEach(function(i){
+// 	if(arr[i] === value){
+// 		console.log(true);
+// 	}else {
+// 		console.log(false);
+// 	}
+// });
+// }
+//
+//****** isUniform ******//
+// 
+
+function isUniform(arr){
+	var first = arr[0];
+	for(var i = 1; i < arr.length; i++){
+		if(arr[i] !== first){
+			return false;
+		}
+	}
+	return true;
+}
+
+isUniform();
+
+
+
+//*****//
+
+//*****sumArray*****//
+
+function sumArray(arr) {
+	var total = 0;
+	arr.forEach(function(element){
+		total += element;
+	});
+	return total;               
+}
+
+sumArray();
+
+
+//******//
+
+//***max()****//
+function max(arr){
+	var max = arr[0];
+	for(var i = 1; i < arr.length; i++){
+		if(max < arr[i]){
+			max = arr[i];
+		}
+	}
+	return max;
+}
+
+
+max();
+
+// function max(arr){
+// 	var max = arr[0];
+// 	arr.forEach(function(element){
+// 		if(max < arr[i]){
+// 			max = arr[i];
+// 		}
+// 	});
+// 	return max
+// }
+// max();
+
+function printReverse(arr){
+	for(var i = arr.length - 1; i >= 0; i--){
+		
+	}
+}
